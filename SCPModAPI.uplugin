@@ -1,7 +1,7 @@
 {
 	"FileVersion": 3,
-	"Version": 1,
-	"VersionName": "1.0",
+	"Version": 3,
+	"VersionName": "1.2",
 	"FriendlyName": "SCP Mod API",
 	"Description": "Isolated API for Modders",
 	"Category": "Modding",

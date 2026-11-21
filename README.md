@@ -19,6 +19,12 @@ The plugin is intentionally distributed without C++ source code. Do not include 
 
 Full documentation: https://scpreenter.com/docs/workshop
 
+## SDK 1.2
+
+Adds custom inventory items, including pickups, use effects and first-person animations. See the [item guide](Docs/CustomInventoryItems.md) for a bandage example.
+
+To update, close Unreal Editor and replace the plugin descriptor and binaries together. Custom items require matching game client and dedicated server builds.
+
 ## Compatibility
 
 This binary SDK is tied to Unreal Engine 5.7.4 for Win64. Download a matching SDK release when the game or its public mod API changes.
