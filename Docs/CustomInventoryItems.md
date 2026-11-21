@@ -27,7 +27,7 @@ Firearms, card access permissions and SCP-914 recipes each require a separate ga
 
 ## Add optional first-person animations
 
-Create a hand Animation Blueprint compatible with the game's first-person arm rig. Assign `FirstPersonHandsAnimClass` and `FirstPersonItemMesh` together. Use `FirstPersonItemAnimClass` if the item also animates and `FirstPersonSocket` if it attaches to a specific hand socket or bone.
+For hand animations, use the standard UE5 Mannequin skeleton (`SK_Mannequin`) from the Third Person template. Create your hand Animation Blueprint on that skeleton. Assign `FirstPersonHandsAnimClass` and `FirstPersonItemMesh` together. Use `FirstPersonItemAnimClass` if the item also animates and `FirstPersonSocket` if it attaches to a specific hand socket or bone.
 
 Use **SCP Mod Item Anim Instance** as the AnimBP parent to read `ItemState`. An existing parent can call **Get Mod Item Animation State** on the pawn from the AnimBP Event Graph. Drive use transitions with `bUsing` and synchronize the animation with `UseProgress` when needed. AnimBPs handle local presentation. The server applies the use effect separately. World pickups and third-person presentation use static meshes.
 
